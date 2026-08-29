@@ -1,0 +1,73 @@
+# Sunfire SE
+
+> Sunfire SE is a German hydrogen technology manufacturer in Dresden that builds industrial-scale
+> electrolyzers and power-to-X plants converting renewable electricity into green hydrogen and
+> synthetic fuels. Sunfire publishes NO public API, SDK, developer portal or machine-readable API
+> contract. If you are an agent looking for an integration surface here, there is none to call.
+
+<!--
+generated: 2026-08-29
+method: generated
+source: apis.yml + sunfire.de public pages (no provider-published /llms.txt exists; https://sunfire.de/llms.txt returned 404 on 2026-08-29)
+-->
+
+## What Sunfire is
+
+- Legal entity: Sunfire SE (converted from GmbH to a European stock corporation, 2025).
+  HRB 46479, Amtsgericht Dresden. Head office: Gasanstaltstrasse 2, 01237 Dresden, Germany.
+- Additional entities/sites: Sunfire Business Services SE & Co. KG (Dresden), Sunfire Solingen GmbH
+  (Solingen), and a Berlin office at the EUREF-Campus.
+- Founded 2010 by Carl Berninghausen, Christian von Olshausen and Nils Aldag.
+- Management Board: Nils Aldag (Chairman), Christian von Olshausen, Frank Posnanski, Jens Henneberg.
+  Supervisory Board chair: Dr. Frank Mastiaux.
+- Sector: renewable energy / industrial equipment manufacturing — electrolysis and power-to-X.
+
+## Products (physical plant, not software)
+
+- Sunfire-HyLink Alkaline — pressurized alkaline electrolysis (AEL). HyLink Alkaline 22 (10 MW
+  module) and HyLink Alkaline 23 (50 MW module), operating at 30 bar(g), 5 MW AEL stack.
+- Sunfire-HyLink SOEC — high-temperature solid oxide electrolysis, 10 MW modules, stated
+  37.5 kWh/kg H2 (89%) efficiency for the third-generation SOEC electrolyzer.
+- Scope of supply: FEED engineering, production and pre-assembly, delivery, project management,
+  on-site support, maintenance and digital/remote monitoring services.
+
+## Referenced projects
+
+RWE (Lingen), Salzgitter AG, Neste (Rotterdam), TotalEnergies, BASF (Schwarzheide), P2X Solutions
+(Finland), Nordic Ren-Gas (Tampere), MPREIS, and the Bad Lauchstaedt Energy Park.
+
+## Machine-readable surface
+
+- OpenAPI / Swagger: none published. Probed sunfire.de/openapi.json, /openapi.yaml, /swagger.json,
+  /api-docs, /api — all 404.
+- GraphQL: none. POST to /graphql returned 405 Method Not Allowed from the Next.js frontend; it is
+  not a GraphQL endpoint.
+- AsyncAPI / webhooks / MCP / A2A agent card: none published.
+- /.well-known/: every probed path returns 404. No security.txt, no api-catalog, no agent card.
+- SDKs / packages: no first-party client libraries on npm, PyPI, Maven Central, NuGet, RubyGems,
+  crates.io or pkg.go.dev.
+- No api.sunfire.de, developer.sunfire.de, docs.sunfire.de, portal.sunfire.de or status.sunfire.de
+  host resolves in DNS.
+- The "data-driven monitoring" described on the Customer Services page is a Sunfire-delivered
+  service for plant owners, not a documented public API.
+
+## Links
+
+- Website: https://sunfire.de/en/
+- About: https://sunfire.de/en/about/
+- Product portfolio: https://sunfire.de/en/products/portfolio/
+- Customer services: https://sunfire.de/en/products/service/
+- Newsroom: https://sunfire.de/en/newsroom/
+- Media center: https://sunfire.de/en/newsroom/media-center/
+- Contact: https://sunfire.de/en/contact/
+- Careers: https://sunfire.de/en/career/
+- Privacy: https://sunfire.de/en/privacy/
+- General conditions of delivery and purchase: https://sunfire.de/en/general-conditions-of-delivery-and-purchase/
+- Imprint: https://sunfire.de/en/imprint/
+- General e-mail: info@sunfire.de   Data protection officer: datenschutzbeauftragter@sunfire.de
+- Phone: +49 351 896797-0
+
+## Contacting Sunfire
+
+There is no developer support channel. Product enquiries go through the product form at
+https://sunfire.de/en/contact/; everything else through the general enquiry form on the same page.

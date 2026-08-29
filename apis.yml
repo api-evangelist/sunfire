@@ -1,17 +1,38 @@
 aid: sunfire
 name: Sunfire
-description: 'Sunfire is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Sunfire SE is a German hydrogen technology manufacturer headquartered in Dresden, Saxony, with
+  additional sites in Berlin and Solingen. Founded in 2010 by Carl Berninghausen, Christian von
+  Olshausen and Nils Aldag, and converted to a European stock corporation (SE) in 2025, the company
+  builds industrial-scale electrolyzers and power-to-X plants that convert renewable electricity into
+  green hydrogen and synthetic fuels. Its Sunfire-HyLink portfolio spans pressurized alkaline
+  electrolysis (HyLink Alkaline 22 at 10 MW and HyLink Alkaline 23 at 50 MW per module, operating at
+  30 bar(g)) and high-temperature solid oxide electrolysis (HyLink SOEC, 10 MW modules, a claimed
+  world-record 37.5 kWh/kg H2 efficiency), alongside FEED engineering, project delivery, maintenance
+  and remote data-driven monitoring services. Customers and projects include RWE, Salzgitter, Neste,
+  TotalEnergies, BASF, P2X Solutions, Nordic Ren-Gas and the Bad Lauchstaedt Energy Park. Sunfire is
+  an industrial equipment manufacturer: it publishes no developer program, public API, SDK or
+  machine-readable API contract of any kind.
 url: https://raw.githubusercontent.com/api-evangelist/sunfire/refs/heads/main/apis.yml
+image: https://sunfire.de/logo.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-29'
 modified: '2026-08-29'
 tags:
 - Company
+- Energy
+- Green Hydrogen
+- Electrolysis
+- Power-to-X
+- Renewable Energy
+- Industrial Manufacturing
+- Hydrogen Technology
+- Synthetic Fuels
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,56 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sunfire-domain-security.yml
 - type: Website
+  url: https://sunfire.de/en/
+- type: About
+  url: https://sunfire.de/en/about/
+- type: Products
+  url: https://sunfire.de/en/products/portfolio/
+- type: Blog
+  url: https://sunfire.de/en/newsroom/
+- type: MediaCenter
+  url: https://sunfire.de/en/newsroom/media-center/
+- type: Contact
+  url: https://sunfire.de/en/contact/
+- type: Careers
+  url: https://sunfire.de/en/career/
+- type: PrivacyPolicy
+  url: https://sunfire.de/en/privacy/
+- type: TermsOfService
+  url: https://sunfire.de/en/general-conditions-of-delivery-and-purchase/
+- type: Imprint
+  url: https://sunfire.de/en/imprint/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/sunfire-gmbh/
+- type: SecondaryMarketListing
   url: https://www.hiive.com/securities/sunfire-stock
+- type: LLMsTxt
+  url: llms/sunfire-llms.txt
+x-enrichment:
+  date: '2026-08-29'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Sunfire SE manufactures physical electrolyzer plant (HyLink Alkaline and HyLink SOEC modules) and
+    sells it through a product-enquiry form; the site has 341 sitemap URLs and not one of them is a
+    developer, docs or API page, and api./developer./docs./portal./status.sunfire.de do not resolve
+    in DNS.
+  evidence:
+  - url: https://sunfire.de/openapi.json
+    status: 404
+  - url: https://sunfire.de/.well-known/api-catalog
+    status: 404
+  - url: https://sunfire.de/llms.txt
+    status: 404
+  - url: https://sunfire.de/en/products/service/
+    status: 200
+  - url: https://www.sunfire.de/sitemap.xml
+    status: 200
+  checked: '2026-08-29'

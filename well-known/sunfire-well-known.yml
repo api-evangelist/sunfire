@@ -1,0 +1,49 @@
+generated: '2026-08-29'
+method: probed
+source: live GET probes of /.well-known/* on sunfire.de (2026-08-29)
+note: >-
+  Every probed /.well-known/ path returned 404 from the Next.js app router catch-all. Sunfire SE
+  serves no security.txt, OpenID/OAuth metadata, api-catalog, ai-plugin manifest or A2A agent card.
+  No WellKnown, SecurityTxt or AgentCard pointer is emitted in apis.yml, because a recorded absence
+  is not a served surface. www.sunfire.de 301-redirects to sunfire.de for every path, so the apex is
+  the only origin probed for documents.
+hosts:
+- host: sunfire.de
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/mcp.json
+    status: 404
+    file: null
+- host: www.sunfire.de
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+    note: 301 to https://sunfire.de/.well-known/security.txt, which 404s
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+    note: 301 to the apex, which 404s
