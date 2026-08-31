@@ -1,0 +1,14 @@
+{
+  "repo": "sunfire",
+  "feeds": [
+    {
+      "source": "https://sunfire.de/en/products/portfolio/",
+      "feed_url": "https://sunfire.de/en/products/portfolio/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-30T22:33:40Z"
+}
