@@ -14,6 +14,18 @@ description: >-
   an industrial equipment manufacturer: it publishes no developer program, public API, SDK or
   machine-readable API contract of any kind.
 url: https://raw.githubusercontent.com/api-evangelist/sunfire/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://sunfire.de/logo.png
 x-type: company
 x-source: harvest:secondary-market
